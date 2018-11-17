@@ -14,9 +14,9 @@ source:
   sha256: 3dc2898ca3c5bbf62295b5b961a759a27a5739f7ce444eb51b933e20f7781d95
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -59,8 +59,7 @@ about:
     and fast import packages are used where appropriate. An additional convenience function,
     ''convert()'', provides a simple method for converting between file types.'
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
