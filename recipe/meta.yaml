@@ -1,4 +1,4 @@
-{% set version = "0.5.26" %}
+{% set version = "0.5.27" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rio/rio_{{ version }}.tar.gz
-  sha256: 4df0762782540133f99c5100232b417a2f56d0576bd67f76361fac2596ecdfcc
+  sha256: e0eb616cdbba9f2d5c4489ae05336201d717ce65b0ea6854023054d1c2e3dd0a
 
 build:
   noarch: generic
