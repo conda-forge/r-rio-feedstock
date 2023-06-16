@@ -1,11 +1,11 @@
-About r-rio
-===========
+About r-rio-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rio-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/leeper/rio
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rio-feedstock/blob/main/LICENSE.txt)
 
 Summary: Streamlined data import and export by making assumptions that the user is probably willing to make: 'import()' and 'export()' determine the data structure from the file extension, reasonable defaults are used for data import and export (e.g., 'stringsAsFactors=FALSE'), web-based import is natively supported (including from SSL/HTTPS), compressed files can be read directly without explicit decompression, and fast import packages are used where appropriate. An additional convenience function, 'convert()', provides a simple method for converting between file types.
 
