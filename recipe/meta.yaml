@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-
   url:
     - {{ cran_mirror }}/src/contrib/rio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rio/rio_{{ version }}.tar.gz
@@ -23,24 +22,34 @@ build:
 
 requirements:
   build:
+    - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-r.utils
+    - r-arrow >=0.17.0
     - r-curl >=0.6
-    - r-data.table >=1.9.8
+    - r-data.table >=1.11.2
     - r-foreign
     - r-haven >=1.1.2
-    - r-openxlsx
+    - r-lifecycle
     - r-readxl >=0.1.1
+    - r-stringi
     - r-tibble
+    - r-writexl
   run:
     - r-base
+    - r-r.utils
+    - r-arrow >=0.17.0
     - r-curl >=0.6
-    - r-data.table >=1.9.8
+    - r-data.table >=1.11.2
     - r-foreign
     - r-haven >=1.1.2
-    - r-openxlsx
+    - r-lifecycle
     - r-readxl >=0.1.1
+    - r-stringi
     - r-tibble
+    - r-writexl
 
 test:
   commands:
