@@ -27,27 +27,27 @@ requirements:
   host:
     - r-base
     - r-r.utils
-    - r-arrow >=0.17.0
     - r-curl >=0.6
     - r-data.table >=1.11.2
     - r-foreign
     - r-haven >=1.1.2
     - r-lifecycle
+    - r-nanoparquet
+    - r-readr
     - r-readxl >=0.1.1
-    - r-stringi
     - r-tibble
     - r-writexl
   run:
     - r-base
     - r-r.utils
-    - r-arrow >=0.17.0
     - r-curl >=0.6
     - r-data.table >=1.11.2
     - r-foreign
     - r-haven >=1.1.2
     - r-lifecycle
+    - r-nanoparquet
+    - r-readr
     - r-readxl >=0.1.1
-    - r-stringi
     - r-tibble
     - r-writexl
 
