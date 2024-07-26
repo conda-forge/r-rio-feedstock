@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rio/rio_{{ version }}.tar.gz
-  sha256: 3ef1ef7982146eebcfa17236e26544640248009c660de5d796fbf6b6496b9b52
+  sha256: 4baf892fd43faaef6886a1074d9433d55481ab681e0b93f077d8610d5e49b3d4
 
 build:
   merge_build_host: true  # [win]
@@ -27,27 +27,27 @@ requirements:
   host:
     - r-base
     - r-r.utils
-    - r-arrow >=0.17.0
     - r-curl >=0.6
     - r-data.table >=1.11.2
     - r-foreign
     - r-haven >=1.1.2
     - r-lifecycle
+    - r-nanoparquet
+    - r-readr
     - r-readxl >=0.1.1
-    - r-stringi
     - r-tibble
     - r-writexl
   run:
     - r-base
     - r-r.utils
-    - r-arrow >=0.17.0
     - r-curl >=0.6
     - r-data.table >=1.11.2
     - r-foreign
     - r-haven >=1.1.2
     - r-lifecycle
+    - r-nanoparquet
+    - r-readr
     - r-readxl >=0.1.1
-    - r-stringi
     - r-tibble
     - r-writexl
 
