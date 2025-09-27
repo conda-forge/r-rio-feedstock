@@ -1,4 +1,4 @@
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rio/rio_{{ version }}.tar.gz
-  sha256: 438479d4b47f63dcffdc092e536ca3dfb1402ade8ffa1645fe716aa77f82d6aa
+  sha256: bbc46e204fa3401e785e93b4dd55ab460d63df67b91a6e86d24aa84947dd43e2
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
